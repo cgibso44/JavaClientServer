@@ -145,7 +145,7 @@ $(function(){
     //event handler for vendor# click
     $('#chooseVendor').click(function(){
         $("#poGrid").show();
-        var rootURL = "http://ec2-54-200-141-55.us-west-2.compute.amazonaws.com:8080/Info5059Case2-war/webresources/vendors/";      
+        var rootURL = "http://ec2-54-200-141-55.us-west-1.compute.amazonaws.com:8080/Info5059Case2-war/webresources/vendors/";      
            $.getJSON(rootURL + "getPos/" + $('#vendorno').val(),null, function(data,status,jqXHR) {
                       renderPOInfo(data);
              }).error(function(jqXHR, textStatus, errorThrown){
